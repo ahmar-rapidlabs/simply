@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+
+{% block content %}
+
+
+<div class="main_container d-flex justify-content-center align-items-center" style="height: 100%; width: 100%;">
+    <div class="card_container col-md-6">
+        <div class="input">
+            <form>
+                <div class="file-upload-wrapper">
+                    <img src="{% static 'images/doc.png' %}" class="img-fluid mb-3" alt="">
+                    <input type="file" name="file" id="file-upload" accept=".csv"/>
+                    <label for="file-upload">Upload your file here, or <span class="ms-1 fw-bold link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"> browse</span></label>
+                </div>
+                <div class="submit-btn d-flex justify-content-center mt-5">
+                    <input type="submit" value="Submit" class="btn">
+
+                </div>
+            </form>
+        </div>
+        
+    </div>
+</div>
+
+
+
+{% endblock content %}
